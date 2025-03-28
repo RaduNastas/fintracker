@@ -1,8 +1,0 @@
-CREATE TABLE IF NOT EXISTS transactions
-(
-    id   INTEGER PRIMARY KEY AUTO_INCREMENT,
-    type     VARCHAR(10) CHECK (type IN ('INCOME', 'EXPENSE')),
-    amount   DECIMAL(10, 2),
-    category VARCHAR(50),
-    date     TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
